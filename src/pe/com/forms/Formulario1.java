@@ -16,6 +16,8 @@ public class Formulario1 extends JFrame implements ActionListener, ItemListener 
     public Formulario1() {       //width: 300    height: 200
         this.setTitle("Menu");
         setLayout(null);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
         this.label1 = new JLabel("Seleccione una opción de conversión: ");
         this.label1.setBounds(10, 10, 2380, 30);
         add(this.label1);
