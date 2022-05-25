@@ -14,9 +14,11 @@ public class Formulario3 extends JFrame implements ActionListener, ItemListener 
     private int conversorSeleccionado = 0;
 
     public Formulario3() {       //width: 300    height: 200
-        this.setTitle("Menu");
+        this.setTitle("Selección");
         setLayout(null);
-        this.label1 = new JLabel("Elije la moneda a la que deseas" +
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        this.label1 = new JLabel("Elige la moneda a la que deseas" +
                 "convertir tu dinero:: ");
         this.label1.setBounds(10, 10, 280, 30);
         add(this.label1);
@@ -51,17 +53,12 @@ public class Formulario3 extends JFrame implements ActionListener, ItemListener 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.button1) {
-            System.out.println("Ir a las monedas convertidas");
-            /*if (this.conversorSeleccionado == 0) {
-                Formulario2 formulario2 = new Formulario2();
-                formulario2.setBounds(0, 0, 300, 200);
-                formulario2.setVisible(true);
-                formulario2.setLocationRelativeTo(null);
-                formulario2.setResizable(false);
-                this.setVisible(false);
-            } else if (this.conversorSeleccionado == 1) {
-                System.out.println("Ir al conversor de temperaturas");
-            }*/
+            Formulario4 formulario4 = new Formulario4();
+            formulario4.setBounds(0, 0, 400, 200);
+            formulario4.setVisible(true);
+            formulario4.setLocationRelativeTo(null);
+            formulario4.setResizable(false);
+            this.setVisible(false);
         } else if (e.getSource() == this.button2) {
             System.exit(0);
         }

@@ -11,6 +11,7 @@ public class Formulario4 extends JFrame implements ActionListener {
     public Formulario4() {       //width: 300    height: 200
         this.setTitle("Resultado");
         setLayout(null);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         double resultado = 123;
         this.label1 = new JLabel("Tienes $" + resultado + " dolares.");

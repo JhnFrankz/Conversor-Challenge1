@@ -14,6 +14,8 @@ public class Formulario2 extends JFrame implements ActionListener {
     public Formulario2() {       //width: 300    height: 200
         this.setTitle("Input");
         setLayout(null);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
         this.label1 = new JLabel("Ingresa la cantidad de dinero que" +
                 " deseas convertir: ");
         this.label1.setBounds(10, 10, 380, 30);
