@@ -44,6 +44,14 @@ public class Formulario1 extends JFrame implements ActionListener, ItemListener 
         if (e.getSource() == this.button1) {
             if (this.conversorSeleccionado == 0) {
                 System.out.println("Ir al conversor de monedas");
+                Formulario2 formulario2 = new Formulario2();
+                formulario2.setBounds(0, 0, 300, 200);
+                formulario2.setVisible(true);
+                formulario2.setLocationRelativeTo(null);
+                formulario2.setResizable(false);
+                this.setVisible(false);
+            } else if (this.conversorSeleccionado == 1) {
+                System.out.println("Ir al conversor de temperaturas");
             }
         } else if (e.getSource() == this.button2) {
             System.exit(0);
