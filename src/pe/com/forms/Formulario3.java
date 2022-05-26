@@ -11,7 +11,7 @@ public class Formulario3 extends JFrame implements ActionListener, ItemListener 
     private JComboBox<String> comboBox1;
     private JButton button1;
     private JButton button2;
-    private int conversorSeleccionado = 0;
+    public static int conversorSeleccionado = 0;
 
     public Formulario3() {       //width: 300    height: 200
         this.setTitle("Selección");
@@ -67,8 +67,7 @@ public class Formulario3 extends JFrame implements ActionListener, ItemListener 
     @Override
     public void itemStateChanged(ItemEvent e) {
         if (e.getSource() == this.comboBox1) {
-            this.conversorSeleccionado = this.comboBox1.getSelectedIndex();
-            System.out.println(conversorSeleccionado);
+            conversorSeleccionado = this.comboBox1.getSelectedIndex();
         }
     }
 }

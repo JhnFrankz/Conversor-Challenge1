@@ -9,7 +9,7 @@ public class Formulario2 extends JFrame implements ActionListener {
     private JTextField textField1;
     private JButton button1;
     private JButton button2;
-    private double valorIngresado;
+    public static double valorIngresado;
 
     public Formulario2() {       //width: 300    height: 200
         this.setTitle("Input");
@@ -52,9 +52,9 @@ public class Formulario2 extends JFrame implements ActionListener {
                 boolean esNumero = false;
 
                 try {
-                    this.valorIngresado = Double.parseDouble(valor);
+                    valorIngresado = Double.parseDouble(valor);
                     esNumero = true;
-                    System.out.println(this.valorIngresado);
+                    System.out.println(valorIngresado);
                 } catch (NumberFormatException numberFormatException) {
                     JOptionPane.showMessageDialog(null,
                             "Solo puede ingresar un número.");

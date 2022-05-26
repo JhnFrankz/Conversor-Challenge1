@@ -1,5 +1,7 @@
 package pe.com.forms;
 
+import pe.com.clases.ConversorMoneda;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,14 +9,18 @@ import java.awt.event.ActionListener;
 public class Formulario4 extends JFrame implements ActionListener {
     private JLabel label1;
     private JButton button1;
+    private double resultado;
 
     public Formulario4() {       //width: 300    height: 200
         this.setTitle("Resultado");
         setLayout(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        double resultado = 123;
-        this.label1 = new JLabel("Tienes $" + resultado + " dolares.");
+        ConversorMoneda conversorMoneda = new ConversorMoneda(Formulario2.valorIngresado
+                , Formulario3.conversorSeleccionado);
+        this.resultado = conversorMoneda.getResultado();
+
+        this.label1 = new JLabel("Tienes $" + this.resultado + " dolares.");
         this.label1.setBounds(10, 10, 2380, 30);
         add(this.label1);
 
