@@ -9,7 +9,8 @@ import java.awt.event.ActionListener;
 public class Formulario4 extends JFrame implements ActionListener {
     private JLabel label1;
     private JButton button1;
-    private double resultado;
+    private double valorResultado;
+    private String mensajeResultado;
 
     public Formulario4() {       //width: 300    height: 200
         this.setTitle("Resultado");
@@ -18,9 +19,10 @@ public class Formulario4 extends JFrame implements ActionListener {
 
         ConversorMoneda conversorMoneda = new ConversorMoneda(Formulario2.valorIngresado
                 , Formulario3.conversorSeleccionado);
-        this.resultado = conversorMoneda.getResultado();
+        this.valorResultado = conversorMoneda.getResultado();
+        this.mensajeResultado = conversorMoneda.getMensajeResultado();
 
-        this.label1 = new JLabel("Tienes $" + this.resultado + " dolares.");
+        this.label1 = new JLabel(this.mensajeResultado);
         this.label1.setBounds(10, 10, 2380, 30);
         add(this.label1);
 

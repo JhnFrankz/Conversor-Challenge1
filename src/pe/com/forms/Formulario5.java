@@ -31,9 +31,9 @@ public class Formulario5 extends JFrame implements ActionListener {
         this.button2.addActionListener(this);
 
         this.button3 = new JButton("Cancel");
-        this.button2.setBounds(230, 100, 90, 30);
-        add(this.button2);
-        this.button2.addActionListener(this);
+        this.button3.setBounds(230, 100, 90, 30);
+        add(this.button3);
+        this.button3.addActionListener(this);
     }
 
     @Override
