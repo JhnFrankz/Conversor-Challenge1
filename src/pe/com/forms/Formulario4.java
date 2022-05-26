@@ -23,11 +23,11 @@ public class Formulario4 extends JFrame implements ActionListener {
         this.mensajeResultado = conversorMoneda.getMensajeResultado();
 
         this.label1 = new JLabel(this.mensajeResultado);
-        this.label1.setBounds(10, 10, 2380, 30);
+        this.label1.setBounds(10, 10, 380, 30);
         add(this.label1);
 
         this.button1 = new JButton("OK");
-        this.button1.setBounds(10, 100, 90, 30);
+        this.button1.setBounds(150, 100, 90, 30);
         add(this.button1);
         this.button1.addActionListener(this);
     }

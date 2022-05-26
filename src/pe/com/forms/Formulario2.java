@@ -26,12 +26,12 @@ public class Formulario2 extends JFrame implements ActionListener {
         add(this.textField1);
 
         this.button1 = new JButton("Aceptar");
-        this.button1.setBounds(10, 100, 90, 30);
+        this.button1.setBounds(95, 100, 90, 30);
         add(this.button1);
         this.button1.addActionListener(this);   //Indicamos que el evento es en este boton
 
         this.button2 = new JButton("Cerrar");
-        this.button2.setBounds(120, 100, 90, 30);
+        this.button2.setBounds(195, 100, 90, 30);
         add(this.button2);
         this.button2.addActionListener(this);
     }

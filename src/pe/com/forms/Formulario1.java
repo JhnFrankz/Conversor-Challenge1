@@ -19,7 +19,7 @@ public class Formulario1 extends JFrame implements ActionListener, ItemListener 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         this.label1 = new JLabel("Seleccione una opción de conversión: ");
-        this.label1.setBounds(10, 10, 2380, 30);
+        this.label1.setBounds(10, 10, 380, 30);
         add(this.label1);
 
         this.comboBox1 = new JComboBox<>();
@@ -30,12 +30,12 @@ public class Formulario1 extends JFrame implements ActionListener, ItemListener 
         this.comboBox1.addItemListener(this);
 
         this.button1 = new JButton("Aceptar");
-        this.button1.setBounds(10, 100, 90, 30);
+        this.button1.setBounds(95, 100, 90, 30);
         add(this.button1);
         this.button1.addActionListener(this);   //Indicamos que el evento es en este boton
 
         this.button2 = new JButton("Cerrar");
-        this.button2.setBounds(120, 100, 90, 30);
+        this.button2.setBounds(195, 100, 90, 30);
         add(this.button2);
         this.button2.addActionListener(this);
     }

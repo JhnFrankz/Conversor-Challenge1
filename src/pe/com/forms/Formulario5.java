@@ -21,17 +21,17 @@ public class Formulario5 extends JFrame implements ActionListener {
         add(this.label1);
 
         this.button1 = new JButton("Yes");
-        this.button1.setBounds(10, 100, 90, 30);
+        this.button1.setBounds(50, 100, 90, 30);
         add(this.button1);
         this.button1.addActionListener(this);
 
         this.button2 = new JButton("No");
-        this.button2.setBounds(120, 100, 90, 30);
+        this.button2.setBounds(150, 100, 90, 30);
         add(this.button2);
         this.button2.addActionListener(this);
 
         this.button3 = new JButton("Cancel");
-        this.button3.setBounds(230, 100, 90, 30);
+        this.button3.setBounds(250, 100, 90, 30);
         add(this.button3);
         this.button3.addActionListener(this);
     }
