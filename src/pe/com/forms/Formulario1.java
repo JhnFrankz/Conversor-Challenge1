@@ -45,7 +45,6 @@ public class Formulario1 extends JFrame implements ActionListener, ItemListener 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.button1) {
             if (this.conversorSeleccionado == 0) {
-                System.out.println("Ir al conversor de monedas");
                 Formulario2 formulario2 = new Formulario2();
                 formulario2.setBounds(0, 0, 400, 200);
                 formulario2.setVisible(true);
@@ -53,7 +52,9 @@ public class Formulario1 extends JFrame implements ActionListener, ItemListener 
                 formulario2.setResizable(false);
                 this.setVisible(false);
             } else if (this.conversorSeleccionado == 1) {
-                System.out.println("Ir al conversor de temperaturas");
+                JOptionPane.showMessageDialog(null,
+                        "En proceso de implementar..",
+                        "Inf", JOptionPane.WARNING_MESSAGE);
             }
         } else if (e.getSource() == this.button2) {
             System.exit(0);
@@ -64,7 +65,6 @@ public class Formulario1 extends JFrame implements ActionListener, ItemListener 
     public void itemStateChanged(ItemEvent e) {
         if (e.getSource() == this.comboBox1) {
             this.conversorSeleccionado = this.comboBox1.getSelectedIndex();
-            System.out.println(conversorSeleccionado);
         }
     }
 }

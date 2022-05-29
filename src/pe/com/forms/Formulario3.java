@@ -13,7 +13,7 @@ public class Formulario3 extends JFrame implements ActionListener, ItemListener 
     private JButton button2;
     public static int conversorSeleccionado = 0;
 
-    public Formulario3() {       //width: 300    height: 200
+    public Formulario3() {
         this.setTitle("Selección");
         setLayout(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -41,7 +41,7 @@ public class Formulario3 extends JFrame implements ActionListener, ItemListener 
         this.button1 = new JButton("Convertir");
         this.button1.setBounds(95, 100, 90, 30);
         add(this.button1);
-        this.button1.addActionListener(this);   //Indicamos que el evento es en este boton
+        this.button1.addActionListener(this);
 
         this.button2 = new JButton("Cerrar");
         this.button2.setBounds(195, 100, 90, 30);
@@ -49,7 +49,6 @@ public class Formulario3 extends JFrame implements ActionListener, ItemListener 
         this.button2.addActionListener(this);
     }
 
-    //e contiene el objeto donde se origina el evento
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.button1) {

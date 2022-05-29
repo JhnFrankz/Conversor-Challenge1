@@ -28,7 +28,7 @@ public class Formulario2 extends JFrame implements ActionListener {
         this.button1 = new JButton("Aceptar");
         this.button1.setBounds(95, 100, 90, 30);
         add(this.button1);
-        this.button1.addActionListener(this);   //Indicamos que el evento es en este boton
+        this.button1.addActionListener(this);
 
         this.button2 = new JButton("Cerrar");
         this.button2.setBounds(195, 100, 90, 30);
@@ -36,7 +36,6 @@ public class Formulario2 extends JFrame implements ActionListener {
         this.button2.addActionListener(this);
     }
 
-    //e contiene el objeto donde se origina el evento
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.button1) {
@@ -69,7 +68,6 @@ public class Formulario2 extends JFrame implements ActionListener {
                     this.setVisible(false);
                 }
             }
-            //Dar validación, mostrar showInput encaso no sea numero
         } else if (e.getSource() == this.button2) {
             System.exit(0);
         }
